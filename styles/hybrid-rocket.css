@@ -1,0 +1,27 @@
+#hybrid-div-1 {
+    border: solid 2px blue;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#hybrid-div-1-content {
+    display: flex;
+}
+
+#hybrid-div-1-right {
+    width: 40%;
+}
+
+#hybrid-div-1-left {
+    width: 60%;
+}
+
+#experiment-firing-pic {
+    width: 80%;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#hybrid-div-2 {
+    border: solid 2px green;
+}

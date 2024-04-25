@@ -1,0 +1,79 @@
+#about-intro-div {
+	display: flex;
+	flex-direction: row;
+}
+
+#about-intro-left-div {
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#intro-me-img {
+	width: 60%;
+	border-radius: 15px;
+}
+
+#about-intro-right-div {
+	width: 50%;
+	line-height: 1.5;
+}
+
+#about-expertise-div {
+	margin-top: 50px;
+}
+
+#about-expertise-title-div {
+	text-align: center;
+}
+
+.about-expertise-row-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.cover-pic-div {
+	width: 22vw;
+	height: 22vw;
+	margin: 1vw;
+	cursor: pointer;
+	background-color: black;
+	border-radius: 20px;
+
+	position: relative;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.cover-pic {
+	width: 100%;
+	border-radius: 20px;
+	transition: opacity 0.75s;
+}
+
+.hide {
+	position: absolute;
+	left: 50%;
+	translate: -50%;
+	color: rgba(255,255,255,0);
+}
+
+.cover-pic:hover {
+	opacity: 0.25;
+}
+
+.cover-pic-div:hover .hide {
+	color: rgba(255,255,255,1);
+}
+
+.cover-pic-title {
+	top: 0;
+}
+
+.cover-pic-text {
+	bottom: 0;
+	font-style: italic;
+}
