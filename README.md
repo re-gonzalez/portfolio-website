@@ -1,4 +1,4 @@
-# portfolio-website
+# Ricardo E. Gonzalez Portfolio Website
 Hi! My name is Ricardo Gonzalez and this is the repository for my portfolio website.
 
 Apart from presenting my engineering experience, projects, and skills, this website also showcases my web development skills.
