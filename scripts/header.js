@@ -23,22 +23,22 @@ document.querySelector('.js-sub-header-div').innerHTML = `
         <h5>About Me</h5>
     </div>
     <div class="sub-header-section-div" onclick="
-        document.location = 'hybrid-rocket.html';
+        document.location = 'education.html';
     ">
         <h5>Education</h5>
     </div>
     <div class="sub-header-section-div" onclick="
-        document.location = 'systems-engineering.html';
+        document.location = 'hybrid-rocket.html';
     ">
         <h5>Experience</h5>
     </div>
     <div class="sub-header-section-div" onclick="
-        document.location = 'embedded-systems.html';
+        document.location = 'hybrid-rocket.html';
     ">
         <h5>Projects</h5>
     </div>
     <div class="sub-header-section-div" onclick="
-        document.location = 'structures.html';
+        document.location = 'education.html';
     ">
         <h5>Resume</h5>
     </div>

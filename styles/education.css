@@ -1,0 +1,28 @@
+.education-row-div {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  translate: 50%;
+
+  margin-bottom: 40px;
+
+  line-height: 1.5;
+}
+
+.row-title-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.uc-davis-logo-pic {
+  margin: 0 2vw;
+}
+
+.italics-this {
+  font-style: italic
+}
+
+.row-content-div {
+  padding-left: 2vw;
+}
