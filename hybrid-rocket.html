@@ -1,40 +1,89 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ricardo E. Gonzalez - Hybrid Rocket</title>
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/hybrid-rocket.css">
-    </head>
-    <body>
+  <head>
+		<title>Ricardo E. Gonzalez - Hybrid Rocket</title>
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/hybrid-rocket.css">
+  </head>
+  <body>
 		<div id="header-div" class="js-header-div"></div>
 		<div id="sub-header-div" class="js-sub-header-div"></div>
+
 		<div class="body-div">
-            <div class="body-title-div">
-				<h1>Hybrid Rocket Propulsion Research</h1>
+      <div class="body-title-div">
+				<h1>Hybrid Rocket Propulsion</h1>
+        <h2>Project: Hydrogen vs Methane Torch Igniter</h2>
 			</div>
-            <div id="hybrid-div-1">
-                <div id="hybrid-div-1-title">
-                    <h3>Overview</h3>
-                </div>
-                <div id="hybrid-div-1-content">
-                    <div id="hybrid-div-1-left">Overview text here</div>
-                    <div id="hybrid-div-1-right">
-                        <image id="experiment-firing-pic" src="images/experiment-firing.PNG" onclick="
-                            var url = 'https://drive.google.com/file/d/17xCrh7NwouMKtP8f9ucTp8sN-jXUyJr0/view?usp=sharing';
-                            var win = window.open(url, '_blank');
-                            win.focus();
-                        ">
-                        </image>
-                    </div>
-                </div>
-            </div>
-            <div id="hybrid-div-2">
-                <h3>Theoretical Background</h3>
-            </div>
-            <div id="hybrid-div-3">
-                <h3>Design and Build</h3>
-            </div>
+
+      <div class="hybrid-section-div" id="hybrid-overview-div">
+      	<div class="hybrid-section-title-div" id="hybrid-overview-title-div">
+          <h3>Overview</h3>
+        </div>
+      	<div class="hybrid-section-content-div" id="hybrid-overview-content-div">
+        	<div id="hybrid-overview-div-left">
+          	<p style="text-indent: 2em;">
+            	In this project, my main goal was to characterize the performance of a Nylon-6/Gaseous Oxygen Hybrid rocket for varying igniter input parameters. This included the type of igniter fuel used such as Hydrogen or Methane, and the flow rates of these fuels. The process for achieving this goal consisted of: conducting a literature review to understand the current state of hybrid rocket igniter technology; designing and manufacturing test hardware such as the rocket nozzle; designing and building the test rig to hold the rocket, the data acquisition system and program from scratch using Arduino, the piping system to feed the oxygen and igniter fuels to the rocket, and the electrical valve control system; filtering and analyzing data to evaluate comparable performance metrics. This project concluded with the writing and submission of my Master’s thesis titled “Characterization of a Nylon-6/Gaseous Oxygen Hybrid Rocket Performance with a Hydrogen versus Methane-Based Torch Igniter System”.
+          	</p>
+						<p>
+							The image to the right shows the rocket flames during the ignition portion of the burn. In the run shown, Hydrogen is used as the igniter fuel. Clicking on the image will direct you to a video of the burn side-by-side with the chamber pressure plotted in real time.
+						</p>
+        	</div>
+        	<div id="hybrid-overview-div-right">
+          	<img id="experiment-firing-pic" src="images/hybrid-rocket/experiment-firing.PNG" onclick="
+							var url = 'https://drive.google.com/file/d/17xCrh7NwouMKtP8f9ucTp8sN-jXUyJr0/view?usp=sharing';
+							var win = window.open(url, '_blank');
+							win.focus();
+						" title="View Video">
+        	</div>
+      	</div>
+    	</div>
+			<div class="hybrid-section-div">
+				<div class="hybrid-section-title-div">
+					<h3>Theoretical Background</h3>
+				</div>
+				<div class="hybrid-section-content-div">
+					<div id="hybrid-theoretical-div-left">
+						<img id="c-star-pic" src="images/hybrid-rocket/c-star.png" onclick="
+						var url = 'https://drive.google.com/file/d/1G2O_8EtKwqElDb2vBnWSashr8h6Mut_I/view?usp=sharing';
+						var win = window.open(url, '_blank');
+						win.focus();
+					" title="View Full Size Image">
+					</div>
+					<div id="hybrid-theoretical-div-right">
+						<p style="text-indent: 2em;">
+							The first step of this project was to conduct a literature review on the current state hybrid rocket igniter technology. Other ignition systems include the use of pyrotechnic charges, catalytic ignition, and laser ignition. Ideally, a good ignition system will be non-toxic, reliable, durable (can be reignited many times with little to no system degradation), and safe to operate. Good ignition systems will also have low mass, low mechanical complexity, and repeatable transient behavior and performance. Low power consumption is also a desirable feature. For this project, a previously-designed Hydrogen-torch igniter was available to conduct testing on. Combining the fact that Hydrogen has been an emerging fuel choice in aerospace applications and that hybrid rocket torch igniter systems in the literature commonly use Methane, I decided to investigate what differences, if any, the use of Hydrogen versus Methane would have in a torch igniter.
+						</p>
+						<p style="text-indent: 2em;">
+							Before designing and building the experimental setup and conducting the experiments, I compared the combustion characteristics of each fuel to formulate a hypothesis on the performance of the transient (ignition) and steady state portions of the hybrid rocket’s operation. The industry standard Chemical Equilibriums Application from NASA was used to evaluate theoretical burn temperatures and c* (c-star) values. The c* value, expressed in meters per second, is a simple measure of the energy made available in the combustion reaction to be used to accelerate the rocket. The initial calculations (plotted in the figure on the left) showed that using Hydrogen would add more energy to the combustion reaction than Methane.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="hybrid-section-div" id="hybrid-build-div">
+      	<div class="hybrid-section-title-div" id="hybrid-build-title-div">
+          <h3>Design and Build</h3>
+        </div>
+      	<div class="hybrid-section-content-div" id="hybrid-build-content-div">
+        	<div id="hybrid-build-div-left">
+          	<p style="text-indent: 2em;">
+							The experimental setup consisted of the rocket assembly mounted on a rigid truss structure and the piping and instrumentation connecting the compressed gas tanks to the injector block of the rocket. Although some parts of the rocket had been previously designed, I designed the nozzle using the expected mass flow rates and operating chamber pressure. The cross section drawing of the nozzle is shown in the figure on the far right. I also prepared the solid Nylon-6 fuel grains using a lathe and a drill press, working with tolerances on the order of 5 thousandths of an inch to ensure a proper sealed fit in the combustion chamber. I constructed the truss structure from aluminum L-brackets and tested the thrust-bearing member with a static load of four times the expected thrust. After taking inventory of the equipment and hardware available in the lab I drew up a piping and instrumentation diagram (left figure), listing every piece of hardware to assemble the system.
+						</p>
+        	</div>
+        	<div id="hybrid-build-div-right">
+          	<img id="p-and-id-pic" src="images/hybrid-rocket/p-and-id.jpg" onclick="
+							var url = 'https://drive.google.com/file/d/1GCZ3C-379NLIGbCmNPxA99V4ArBj6glf/view?usp=sharing';
+							var win = window.open(url, '_blank');
+							win.focus();
+						" title="View Full Size Image">
+						<img id="nozzle-pic" src="images/hybrid-rocket/nozzle.PNG" onclick="
+						var url = 'https://drive.google.com/file/d/1dTszfDyUrS3ooOmRgdn3b48urD1K4J71/view?usp=sharing';
+						var win = window.open(url, '_blank');
+						win.focus();
+					" title="View Full Size Image">
+        	</div>
+      	</div>
+    	</div>
 		</div>
 		<script src="scripts/header.js"></script>
-    </body>
+  </body>
 </html>

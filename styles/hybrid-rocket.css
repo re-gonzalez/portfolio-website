@@ -1,27 +1,72 @@
-#hybrid-div-1 {
-    border: solid 2px blue;
-
-    display: flex;
-    flex-direction: column;
+.hybrid-section-div {
+	display: flex;
+	flex-direction: column;
 }
 
-#hybrid-div-1-content {
-    display: flex;
+.hybrid-section-title-div {
+	padding-left: 5vw;
 }
 
-#hybrid-div-1-right {
-    width: 40%;
+.hybrid-section-content-div {
+	display: flex;
 }
 
-#hybrid-div-1-left {
-    width: 60%;
+#hybrid-overview-div-right {
+	width: 40%;
+}
+
+#hybrid-overview-div-left {
+	width: 60%;
+	line-height: 1.5;
+	padding: 0 2vw;
 }
 
 #experiment-firing-pic {
-    width: 80%;
-    cursor: pointer;
-    border-radius: 20px;
+	width: 80%;
+	cursor: pointer;
+	border-radius: 20px;
 }
-#hybrid-div-2 {
-    border: solid 2px green;
+
+#hybrid-theoretical-div-left {
+	width: 55%;
+	display: flex;
+	align-items: center;
+}
+
+#hybrid-theoretical-div-right {
+	width: 45%;
+	line-height: 1.5;
+	padding: 0 2vw;
+}
+
+#c-star-pic {
+	width: 95%;
+	margin-left: 2vw;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+#hybrid-build-div-left {
+	width: 30%;
+	line-height: 1.5;
+	padding: 0 2vw;
+}
+
+#hybrid-build-div-right {
+	width: 70%;
+	display: flex;
+	align-items: center;
+}
+
+#p-and-id-pic {
+	width: 55%;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+#nozzle-pic {
+	width: 41%;
+	margin-left: 5px;
+	cursor: pointer;
+	border-radius: 20px;
 }
