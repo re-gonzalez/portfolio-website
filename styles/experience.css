@@ -1,0 +1,37 @@
+.experience-row-div {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  translate: 50%;
+
+  margin-bottom: 40px;
+
+  line-height: 1.5;
+
+  /*border: solid white 2px;*/
+}
+
+.row-title-div {
+  display: flex;
+  flex-direction: row;
+
+  /*border: solid blue 2px;*/
+}
+
+.row-content-div {
+  margin-left: 2vw;
+  /*border: solid green 2px;*/
+}
+
+.erl-logo-pic {
+  width: 22%;
+  border-radius: 15px;
+  margin: 0 2vw;
+}
+
+.sss-logo-pic {
+  width: 22%;
+  border-radius: 15px;
+  margin: 0 2vw;
+}
