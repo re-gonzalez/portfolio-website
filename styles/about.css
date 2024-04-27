@@ -18,6 +18,7 @@
 #about-intro-right-div {
 	width: 50%;
 	line-height: 1.5;
+	text-align: justify;
 }
 
 #about-expertise-div {
@@ -76,4 +77,27 @@
 .cover-pic-text {
 	bottom: 0;
 	font-style: italic;
+}
+
+#resume-button {
+	height: 50px;
+	width: 150px;
+
+	position: relative;
+	left: 50%;
+	translate: -50%;
+
+	background-color: rgb(7, 0, 57);
+	border: solid 2px white;
+	border-radius: 5px;
+	color: white;
+	font-size: 17px;
+
+	cursor: pointer;
+	transition: border-color 0.7s, color 0.7s;
+}
+
+#resume-button:hover {
+	color: rgb(0, 140, 255);
+	border-color: rgb(0, 140, 255);
 }

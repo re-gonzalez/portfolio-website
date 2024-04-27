@@ -37,9 +37,4 @@ document.querySelector('.js-sub-header-div').innerHTML = `
     ">
         <h5>Projects</h5>
     </div>
-    <div class="sub-header-section-div" onclick="
-        document.location = 'education.html';
-    ">
-        <h5>Resume</h5>
-    </div>
 `;
