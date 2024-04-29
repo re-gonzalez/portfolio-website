@@ -1,0 +1,9 @@
+#adcs-project-div {
+  align-items: center;
+}
+#adcs-poster {
+  width: 75%;
+  border: solid 3px white;
+  border-radius: 15px;
+  cursor: pointer;
+}

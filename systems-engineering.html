@@ -1,18 +1,125 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Ricardo E. Gonzalez - Spacecraft Systems Engineering</title>
+  <head>
+		<title>Ricardo E. Gonzalez - Systems Engineering</title>
 		<link rel="stylesheet" href="styles/main.css">
-	</head>
-	<body>
+		<link rel="stylesheet" href="styles/systems-engineering.css">
+		<link rel="stylesheet" href="styles/embedded-systems.css">
+		<link rel="stylesheet" href="styles/project.css">
+  </head>
+  <body>
 		<div id="header-div" class="js-header-div"></div>
 		<div id="sub-header-div" class="js-sub-header-div"></div>
-		<div class="body-div">
-            <div class="body-title-div">
-				<h1>Spacecraft Systems Engineering</h1>
-			</div>
-		</div>
 
+		<div class="body-div">
+      <div class="body-title-div">
+        <h1>Project: CubeSat Systems Engineering</h1>
+			</div>
+      <div class="project-section-div">
+      	<div class="project-section-title-div">
+          <h3>Overview</h3>
+        </div>
+      	<div class="project-section-content-div">
+        	<div class="project-odd-div-left">
+          	<p class="project-content-p">
+            	In this project, my main goal was to characterize the performance of a Nylon-6/Gaseous Oxygen Hybrid rocket for varying igniter input parameters. This included the type of igniter fuel used such as Hydrogen or Methane, and the flow rates of these fuels. The process for achieving this goal consisted of: conducting a literature review to understand the current state of hybrid rocket igniter technology; designing and manufacturing test hardware such as the rocket nozzle; designing and building the test rig to hold the rocket, the data acquisition system and program from scratch using Arduino, the piping system to feed the oxygen and igniter fuels to the rocket, and the electrical valve control system; filtering and analyzing data to evaluate comparable performance metrics. This project concluded with the writing and submission of my Master’s thesis titled “Characterization of a Nylon-6/Gaseous Oxygen Hybrid Rocket Performance with a Hydrogen versus Methane-Based Torch Igniter System”.
+          	</p>
+						<p class="project-content-p">
+							The image to the right shows the rocket flames during the ignition portion of the burn. In the run shown, Hydrogen is used as the igniter fuel. Clicking on the image will direct you to a video of the burn side-by-side with the chamber pressure plotted in real time.
+						</p>
+        	</div>
+        	<div class="project-odd-div-right">
+          	<img class="project-content-img" id="mission-overview-pic" src="images/systems-engineering/mission-overview.PNG" onclick="
+							var url = 'https://docs.google.com/presentation/d/1vSHQ_jkK4Am4-h9Fj48U6V3rixC84mthG0jIsvJHeuk/edit?usp=sharing';
+							var win = window.open(url, '_blank');
+							win.focus();
+						" title="View Full Presentation">
+        	</div>
+      	</div>
+    	</div>
+			<div class="project-section-div">
+				<div class="project-section-title-div">
+					<h3>Concept of Operations</h3>
+				</div>
+				<div class="project-section-content-div">
+					<div class="project-even-div-left">
+						<img class="project-content-img" id="con-ops-pic" src="images/systems-engineering/con-ops.PNG" onclick="
+							var url = 'https://docs.google.com/presentation/d/1vSHQ_jkK4Am4-h9Fj48U6V3rixC84mthG0jIsvJHeuk/edit?usp=sharing';
+							var win = window.open(url, '_blank');
+							win.focus();
+						" title="View Full Presentation">
+					</div>
+					<div class="project-even-div-right">
+						<p class="project-content-p">
+							The first step of this project was to conduct a literature review on the current state hybrid rocket igniter technology. Other ignition systems include the use of pyrotechnic charges, catalytic ignition, and laser ignition. Ideally, a good ignition system will be non-toxic, reliable, durable (can be reignited many times with little to no system degradation), and safe to operate. Good ignition systems will also have low mass, low mechanical complexity, and repeatable transient behavior and performance. Low power consumption is also a desirable feature. For this project, a previously-designed Hydrogen-torch igniter was available to conduct testing on. Combining the fact that Hydrogen has been an emerging fuel choice in aerospace applications and that hybrid rocket torch igniter systems in the literature commonly use Methane, I decided to investigate what differences, if any, the use of Hydrogen versus Methane would have in a torch igniter.
+						</p>
+						<p class="project-content-p">
+							Before designing and building the experimental setup and conducting the experiments, I compared the combustion characteristics of each fuel to formulate a hypothesis on the performance of the transient (ignition) and steady state portions of the hybrid rocket’s operation. The industry standard Chemical Equilibriums Application from NASA was used to evaluate theoretical burn temperatures and c* (c-star) values. The c* value, expressed in meters per second, is a simple measure of the energy made available in the combustion reaction to be used to accelerate the rocket. The initial calculations (plotted in the figure on the left) showed that using Hydrogen would add more energy to the combustion reaction than Methane.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="project-section-div">
+      	<div class="project-section-title-div">
+          <h3>Mission Risk Assessment</h3>
+        </div>
+      	<div class="project-section-content-div">
+        	<div class="project-odd-div-left">
+          	<p class="project-content-p">
+							The experimental setup consisted of the rocket assembly mounted on a rigid truss structure and the piping and instrumentation connecting the compressed gas tanks to the injector block of the rocket. Although some parts of the rocket had been previously designed, I designed the nozzle using the expected mass flow rates and operating chamber pressure. The cross section drawing of the nozzle is shown in the figure on the far right. I also prepared the solid Nylon-6 fuel grains using a lathe and a drill press, working with tolerances on the order of 5 thousandths of an inch to ensure a proper sealed fit in the combustion chamber. I constructed the truss structure from aluminum L-brackets and tested the thrust-bearing member with a static load of four times the expected thrust. After taking inventory of the equipment and hardware available in the lab I drew up a piping and instrumentation diagram (left figure), listing every piece of hardware to assemble the system.
+						</p>
+        	</div>
+        	<div class="project-odd-div-right">
+						<img class="project-content-img" id="adcs-risk-pic" src="images/systems-engineering/adcs-risk.PNG" onclick="
+							var url = 'https://docs.google.com/presentation/d/1vSHQ_jkK4Am4-h9Fj48U6V3rixC84mthG0jIsvJHeuk/edit?usp=sharing';
+							var win = window.open(url, '_blank');
+							win.focus();
+						" title="View Full Presentation">
+        	</div>
+      	</div>
+    	</div>
+			<div class="project-section-div">
+				<div class="project-section-title-div">
+					<h3>Mass, Power, and Link Budgets</h3>
+				</div>
+				<div class="project-section-content-div">
+					<div class="project-even-div-left">
+						<img class="project-content-img" id="mass-budget-pic" src="images/systems-engineering/mass-budget.PNG" onclick="
+							var url = 'https://docs.google.com/presentation/d/1vSHQ_jkK4Am4-h9Fj48U6V3rixC84mthG0jIsvJHeuk/edit?usp=sharing';
+							var win = window.open(url, '_blank');
+							win.focus();
+						" title="View Full Presentation">
+					</div>
+					<div class="project-even-div-right">
+						<p class="project-content-p">
+							The first step of this project was to conduct a literature review on the current state hybrid rocket igniter technology. Other ignition systems include the use of pyrotechnic charges, catalytic ignition, and laser ignition. Ideally, a good ignition system will be non-toxic, reliable, durable (can be reignited many times with little to no system degradation), and safe to operate. Good ignition systems will also have low mass, low mechanical complexity, and repeatable transient behavior and performance. Low power consumption is also a desirable feature. For this project, a previously-designed Hydrogen-torch igniter was available to conduct testing on. Combining the fact that Hydrogen has been an emerging fuel choice in aerospace applications and that hybrid rocket torch igniter systems in the literature commonly use Methane, I decided to investigate what differences, if any, the use of Hydrogen versus Methane would have in a torch igniter.
+						</p>
+						<p class="project-content-p">
+							Before designing and building the experimental setup and conducting the experiments, I compared the combustion characteristics of each fuel to formulate a hypothesis on the performance of the transient (ignition) and steady state portions of the hybrid rocket’s operation. The industry standard Chemical Equilibriums Application from NASA was used to evaluate theoretical burn temperatures and c* (c-star) values. The c* value, expressed in meters per second, is a simple measure of the energy made available in the combustion reaction to be used to accelerate the rocket. The initial calculations (plotted in the figure on the left) showed that using Hydrogen would add more energy to the combustion reaction than Methane.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="project-section-div">
+      	<div class="project-section-title-div">
+          <h3>Miscellaneous Tasks</h3>
+        </div>
+      	<div class="project-section-content-div">
+        	<div class="project-odd-div-left">
+          	<p class="project-content-p">
+							The experimental setup consisted of the rocket assembly mounted on a rigid truss structure and the piping and instrumentation connecting the compressed gas tanks to the injector block of the rocket. Although some parts of the rocket had been previously designed, I designed the nozzle using the expected mass flow rates and operating chamber pressure. The cross section drawing of the nozzle is shown in the figure on the far right. I also prepared the solid Nylon-6 fuel grains using a lathe and a drill press, working with tolerances on the order of 5 thousandths of an inch to ensure a proper sealed fit in the combustion chamber. I constructed the truss structure from aluminum L-brackets and tested the thrust-bearing member with a static load of four times the expected thrust. After taking inventory of the equipment and hardware available in the lab I drew up a piping and instrumentation diagram (left figure), listing every piece of hardware to assemble the system.
+						</p>
+        	</div>
+        	<div class="project-odd-div-right">
+						<img class="project-content-img" id="antenna-deploy-pic" src="images/systems-engineering/antenna-deploy.PNG" onclick="
+							var url = 'https://drive.google.com/file/d/1FWcC-xuo_6L2Vb17j8oma5sPSEmrLU-1/view?usp=sharing';
+							var win = window.open(url, '_blank');
+							win.focus();
+						" title="View Video">
+        	</div>
+      	</div>
+    	</div>
+		</div>
 		<script src="scripts/header.js"></script>
-	</body>
+  </body>
 </html>

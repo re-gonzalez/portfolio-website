@@ -50,3 +50,8 @@
 	text-indent: 2em;
 	line-height: 1.5;
 }
+
+.project-content-img {
+  border-radius: 15px;
+  cursor: pointer;
+}

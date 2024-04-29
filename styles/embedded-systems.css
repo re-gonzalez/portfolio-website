@@ -1,0 +1,13 @@
+#valve-test-pic {
+  width: 70%;
+}
+
+#daq-circuit-diagram-pic {
+  width: 95%;
+  translate: -3%;
+}
+
+#valve-circuit-diagram-pic {
+  width: 95%;
+  translate: 3%;
+}
