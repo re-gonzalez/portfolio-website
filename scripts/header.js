@@ -33,7 +33,7 @@ document.querySelector('.js-sub-header-div').innerHTML = `
         <h5>Experience</h5>
     </div>
     <div class="sub-header-section-div" onclick="
-        document.location = 'hybrid-rocket.html';
+        document.location = 'projects.html';
     ">
         <h5>Projects</h5>
     </div>
