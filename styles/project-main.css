@@ -5,8 +5,8 @@
 .project-entry-div {
   border: white solid 2px;
 
-  width: 80vw;
-  height: 21vw;
+  width: 1250px;
+  height: 329px;
 
   display: flex;
   flex-direction: row;
@@ -16,7 +16,7 @@
 
 .project-entry-img-div {
   /*border: green solid 3px;*/
-  width: 21vw;
+  width: 329px;
 }
 
 .project-entry-txt-div {
@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 59vw;
+  width: 921px;
 }
 
 .project-entry-img {
